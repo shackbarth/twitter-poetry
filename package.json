@@ -1,0 +1,22 @@
+{
+  "name": "twitter-poetry",
+  "version": "0.0.1",
+  "description": "Pull song lyrics out of the Twitter stream",
+  "keywords": [],
+  "dependencies": {
+    "hypher": "~0.2.1",
+    "hyphenation.en-us": "~0.2.1",
+    "lodash": "~2.4.1",
+    "parse-english": "~0.1.0",
+    "twitter": "~0.2.9"
+  },
+  "scripts": {
+    "start": "node twitter_poetry.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shackbarth/twitter-poetry.git"
+  },
+  "author": "Steve Hackbarth",
+  "license": "MIT"
+}
