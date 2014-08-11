@@ -12,7 +12,7 @@
     "twitter": "~0.2.9"
   },
   "scripts": {
-    "start": "node twitter_poetry.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
