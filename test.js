@@ -1,7 +1,24 @@
-var gather = require("./lib/twitter_poetry").gatherVerse,//.buildVerseFromInput,
-  creds = require("./api_keys").keys,
-  line = "I'm a cowboy, on a steel horse I ride";
+var adaptor = require("../pop-music-generator/lib/adaptor");
 
-gather({creds: creds, input: line}, function (err, res) {
-  console.log("done!", arguments);
-});
+var lyrics = [
+  "Foo foo foo foo foo foo foo foo",
+  "Foo foo foo foo foo foo foo foo",
+  "Foo foo foo foo foo foo foo foo",
+  "Foo foo foo foo foo foo foo foo"
+];
+var baseRhythm = [
+  [15],
+  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  [0, 1, 2, 3, 4, 5, 15],
+  [0, 1, 2, 12, 14]
+];
+
+var baseMelody = [
+  [10],
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  [1, 2, 3, 4, 5, 6, 7],
+  [1, 2, 3, 4, 5]
+];
+
+
+console.log(adaptor.getAdaptedVerse(lyrics, baseRhythm, baseMelody));
