@@ -19,6 +19,7 @@
     "type": "git",
     "url": "git://github.com/shackbarth/twitter-poetry.git"
   },
+  "main": "./lib/twitter_poetry",
   "author": "Steve Hackbarth",
   "license": "MIT"
 }
